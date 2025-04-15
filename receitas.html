@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Receitas Secretas de Chocolate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #fefcf9;
+            color: #442b1c;
+        }
+        header {
+            background-color: #5e3023;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+        .receita {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .receita:hover {
+            transform: scale(1.03);
+        }
+        .receita img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .receita .conteudo {
+            padding: 20px;
+        }
+        .receita .conteudo h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        .botao {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 16px;
+            background-color: #5e3023;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #442b1c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Receitas Secretas de Chocolate</h1>
+        <p>Por Chef Deassis</p>
+    </header>
+
+    <section class="galeria">
+        <div class="receita">
+            <img src="https://source.unsplash.com/600x400/?brigadeiro" alt="Brigadeiro Gourmet">
+            <div class="conteudo">
+                <h2>Brigadeiro Belga Trufado</h2>
+                <a href="#" class="botao">Ver Receita</a>
+            </div>
+        </div>
+        <div class="receita">
+            <img src="https://source.unsplash.com/600x400/?trufa-chocolate" alt="Trufa de Chocolate">
+            <div class="conteudo">
+                <h2>Trufa de Chocolate Amargo</h2>
+                <a href="#" class="botao">Ver Receita</a>
+            </div>
+        </div>
+        <div class="receita">
+            <img src="https://source.unsplash.com/600x400/?brownie" alt="Brownie">
+            <div class="conteudo">
+                <h2>Brownie Cremoso Recheado</h2>
+                <a href="#" class="botao">Ver Receita</a>
+            </div>
+        </div>
+        <div class="receita">
+            <img src="https://source.unsplash.com/600x400/?chocolate-cake" alt="Bolo de Chocolate">
+            <div class="conteudo">
+                <h2>Bolo Mousse de Chocolate</h2>
+                <a href="#" class="botao">Ver Receita</a>
+            </div>
+        </div>
+        <div class="receita">
+            <img src="https://source.unsplash.com/600x400/?pudim-chocolate" alt="Pudim">
+            <div class="conteudo">
+                <h2>Pudim de Cacau Intenso</h2>
+                <a href="#" class="botao">Ver Receita</a>
+            </div>
+        </div>
+        <div class="receita">
+            <img src="https://source.unsplash.com/600x400/?cupcake-chocolate" alt="Cupcake">
+            <div class="conteudo">
+                <h2>Cupcake com Ganache</h2>
+                <a href="#" class="botao">Ver Receita</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Chef Deassis &copy; 2025</p>
+    </footer>
+</body>
+</html>
