@@ -2,123 +2,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Receitas Secretas de Chocolate</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            background-color: #fefcf9;
-            color: #442b1c;
-        }
-        header {
-            background-color: #5e3023;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-        h1 {
-            margin: 0;
-        }
-        .galeria {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 40px;
-        }
-        .receita {
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            overflow: hidden;
-            transition: transform 0.3s;
-        }
-        .receita:hover {
-            transform: scale(1.03);
-        }
-        .receita img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-        .receita .conteudo {
-            padding: 20px;
-        }
-        .receita .conteudo h2 {
-            margin-top: 0;
-            font-size: 1.2rem;
-        }
-        .botao {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 16px;
-            background-color: #5e3023;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #442b1c;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Receitas Secretas de Chocolate</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background: #fff8f0;
+      color: #4b2e2e;
+    }
+    h1 {
+      text-align: center;
+    }
+    .receita {
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #d9b382;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 600px;
+    }
+    button {
+      background-color: #8b4513;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .conteudo {
+      display: none;
+      margin-top: 10px;
+      text-align: left;
+    }
+  </style>
+  <script>
+    function toggleReceita(id) {
+      var conteudo = document.getElementById(id);
+      conteudo.style.display = conteudo.style.display === "none" ? "block" : "none";
+    }
+  </script>
 </head>
 <body>
-    <header>
-        <h1>Receitas Secretas de Chocolate</h1>
-        <p>Por Chef Deassis</p>
-    </header>
+  <h1>🍫 Receitas Secretas das Fábricas de Chocolate</h1>
 
-    <section class="galeria">
-        <div class="receita">
-            <img src="https://source.unsplash.com/600x400/?brigadeiro" alt="Brigadeiro Gourmet">
-            <div class="conteudo">
-                <h2>Brigadeiro Belga Trufado</h2>
-                <a href="#" class="botao">Ver Receita</a>
-            </div>
-        </div>
-        <div class="receita">
-            <img src="https://source.unsplash.com/600x400/?trufa-chocolate" alt="Trufa de Chocolate">
-            <div class="conteudo">
-                <h2>Trufa de Chocolate Amargo</h2>
-                <a href="#" class="botao">Ver Receita</a>
-            </div>
-        </div>
-        <div class="receita">
-            <img src="https://source.unsplash.com/600x400/?brownie" alt="Brownie">
-            <div class="conteudo">
-                <h2>Brownie Cremoso Recheado</h2>
-                <a href="#" class="botao">Ver Receita</a>
-            </div>
-        </div>
-        <div class="receita">
-            <img src="https://source.unsplash.com/600x400/?chocolate-cake" alt="Bolo de Chocolate">
-            <div class="conteudo">
-                <h2>Bolo Mousse de Chocolate</h2>
-                <a href="#" class="botao">Ver Receita</a>
-            </div>
-        </div>
-        <div class="receita">
-            <img src="https://source.unsplash.com/600x400/?pudim-chocolate" alt="Pudim">
-            <div class="conteudo">
-                <h2>Pudim de Cacau Intenso</h2>
-                <a href="#" class="botao">Ver Receita</a>
-            </div>
-        </div>
-        <div class="receita">
-            <img src="https://source.unsplash.com/600x400/?cupcake-chocolate" alt="Cupcake">
-            <div class="conteudo">
-                <h2>Cupcake com Ganache</h2>
-                <a href="#" class="botao">Ver Receita</a>
-            </div>
-        </div>
-    </section>
+  <div class="receita">
+    <h2>1. Trufa Suíça Original</h2>
+    <button onclick="toggleReceita('r1')">Ver Receita</button>
+    <div class="conteudo" id="r1">
+      <p><strong>Ingredientes:</strong> Chocolate meio amargo, creme de leite fresco, manteiga.</p>
+      <p><strong>Modo de preparo:</strong> Derreta o chocolate, incorpore o creme e a manteiga, resfrie, modele e finalize com cacau em pó.</p>
+    </div>
+  </div>
 
-    <footer>
-        <p>Chef Deassis &copy; 2025</p>
-    </footer>
+  <div class="receita">
+    <h2>2. Ganache Brilhante de Vitrine</h2>
+    <button onclick="toggleReceita('r2')">Ver Receita</button>
+    <div class="conteudo" id="r2">
+      <p><strong>Ingredientes:</strong> Chocolate nobre 70%, creme de leite UHT, glucose de milho.</p>
+      <p><strong>Modo de preparo:</strong> Derreta o chocolate, adicione a glucose e o creme, mexa até ficar brilhante e homogêneo.</p>
+    </div>
+  </div>
+
+  <div class="receita">
+    <h2>3. Recheio de Bombom Macio</h2>
+    <button onclick="toggleReceita('r3')">Ver Receita</button>
+    <div class="conteudo" id="r3">
+      <p><strong>Ingredientes:</strong> Leite condensado, chocolate branco, creme de leite, essência de baunilha.</p>
+      <p><strong>Modo de preparo:</strong> Derreta o chocolate, adicione os demais ingredientes, cozinhe até engrossar e use frio.</p>
+    </div>
+  </div>
+
+  <div class="receita">
+    <h2>4. Creme de Avelã Caseiro</h2>
+    <button onclick="toggleReceita('r4')">Ver Receita</button>
+    <div class="conteudo" id="r4">
+      <p><strong>Ingredientes:</strong> Avelãs torradas, leite condensado, chocolate ao leite, óleo de coco.</p>
+      <p><strong>Modo de preparo:</strong> Processe as avelãs, derreta o chocolate e misture tudo até virar um creme.</p>
+    </div>
+  </div>
+
+  <div class="receita">
+    <h2>5. Casquinha Perfeita de Bombom</h2>
+    <button onclick="toggleReceita('r5')">Ver Receita</button>
+    <div class="conteudo" id="r5">
+      <p><strong>Ingredientes:</strong> Chocolate temperado, manteiga de cacau.</p>
+      <p><strong>Modo de preparo:</strong> Derreta e tempere o chocolate, adicione manteiga de cacau e molde com pinceladas finas em forminhas.</p>
+    </div>
+  </div>
+
+  <div class="receita">
+    <h2>6. Recheio Aerado Estilo Trento</h2>
+    <button onclick="toggleReceita('r6')">Ver Receita</button>
+    <div class="conteudo" id="r6">
+      <p><strong>Ingredientes:</strong> Chocolate branco, chantilly batido, essência de baunilha.</p>
+      <p><strong>Modo de preparo:</strong> Misture chocolate derretido com chantilly e baunilha e leve à geladeira.</p>
+    </div>
+  </div>
+
+  <div class="receita">
+    <h2>7. Caramelo de Confeitaria</h2>
+    <button onclick="toggleReceita('r7')">Ver Receita</button>
+    <div class="conteudo" id="r7">
+      <p><strong>Ingredientes:</strong> Açúcar, creme de leite, manteiga, sal.</p>
+      <p><strong>Modo de preparo:</strong> Derreta o açúcar, adicione o creme e manteiga aos poucos, finalize com sal.</p>
+    </div>
+  </div>
+
+  <div class="receita">
+    <h2>8. Brigadeiro Gourmet Brilhante</h2>
+    <button onclick="toggleReceita('r8')">Ver Receita</button>
+    <div class="conteudo" id="r8">
+      <p><strong>Ingredientes:</strong> Leite condensado, chocolate belga, manteiga, glucose.</p>
+      <p><strong>Modo de preparo:</strong> Cozinhe até o ponto de brigadeiro firme e brilhante, deixe esfriar antes de enrolar.</p>
+    </div>
+  </div>
+
+  <div class="receita">
+    <h2>9. Massa de Trufa com Licor</h2>
+    <button onclick="toggleReceita('r9')">Ver Receita</button>
+    <div class="conteudo" id="r9">
+      <p><strong>Ingredientes:</strong> Chocolate meio amargo, creme de leite, licor de amêndoas.</p>
+      <p><strong>Modo de preparo:</strong> Derreta o chocolate com creme, adicione o licor, esfrie e modele.</p>
+    </div>
+  </div>
+
+  <div class="receita">
+    <h2>10. Cobertura Profissional para Pães de Mel</h2>
+    <button onclick="toggleReceita('r10')">Ver Receita</button>
+    <div class="conteudo" id="r10">
+      <p><strong>Ingredientes:</strong> Chocolate fracionado, essência de mel.</p>
+      <p><strong>Modo de preparo:</strong> Derreta o chocolate, adicione essência e banhe os pães de mel. Deixe secar em superfície lisa.</p>
+    </div>
+  </div>
+
 </body>
 </html>
