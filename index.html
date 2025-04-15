@@ -1,26 +1,82 @@
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>10 Receitas Secretas de Chocolate</title>
-  <style>
-    body { font-family: 'Arial', sans-serif; background: #fff8f3; padding: 2rem; color: #3a2e2a; }
-    h1 { text-align: center; color: #5e3c2c; }
-    .container { max-width: 800px; margin: 0 auto; }
-    .card { background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 20px; margin-bottom: 20px; }
-    img { width: 100%; border-radius: 10px; }
-    .pdf-link { display: block; margin: 20px 0; text-align: center; font-weight: bold; color: #b05d3b; }
-  </style>
+    <meta charset="UTF-8">
+    <title>Receitas Secretas de Chocolate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+            color: #4e342e;
+        }
+        header {
+            background-color: #3e2723;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        main {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 12px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, button {
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #6d4c41;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5d4037;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #3e2723;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>10 Receitas que as Fábricas de Chocolate Escondem</h1>
-    <div class="card">
-      <img src="assets/capa.png" alt="Capa do Ebook">
-      <p class="pdf-link"><a href="ebook-receitas-chocolate.pdf" download>📥 Baixar Ebook em PDF</a></p>
-    </div>
-  </div>
+    <header>
+        <h1>Receitas Secretas de Chocolate</h1>
+        <p>Por Chef Deassis</p>
+    </header>
+
+    <main>
+        <p>Preencha com seu nome e e-mail para acessar o e-book exclusivo:</p>
+        <form action="https://formsubmit.co/deassis.nascimento.2024@gmail.com" method="POST">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <input type="hidden" name="_next" value="https://chefdeassisoficial.github.io/site-receitas-chocolate/receitas.html">
+            <button type="submit">Quero Receber</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Chef Deassis - Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>
